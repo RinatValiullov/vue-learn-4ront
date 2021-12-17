@@ -1,4 +1,5 @@
 module.exports = {
   tabWidth: 2,
-  arrowParens: "always"
+  arrowParens: "always",
+  endOfLine: "crlf",
 };
