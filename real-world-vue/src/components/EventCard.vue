@@ -21,6 +21,7 @@ export default {
   cursor: pointer;
   margin-bottom: 18px;
   padding: 20px;
+  transition: transform 0.2s ease;
   width: 250px;
 }
 .event-card:hover {
