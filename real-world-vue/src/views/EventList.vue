@@ -7,7 +7,7 @@
 
 <script>
 import EventCard from "@/components/EventCard.vue";
-import axios from "axios";
+import EventService from "@/Services/EventService.js";
 
 export default {
   name: "EventList",
@@ -20,10 +20,7 @@ export default {
     };
   },
   created() {
-    axios
-      .get(
-        "https://my-json-server.typicode.com/RinatValiullov/vue-learn-4ront/events"
-      )
+    EventService.getEvents()
       .then((response) => {
         this.events = response.data;
       })
