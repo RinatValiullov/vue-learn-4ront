@@ -6,7 +6,6 @@
   </div>
 </template>
 
-
 <script>
 import EventService from "@/Services/EventService.js";
 
@@ -22,6 +21,7 @@ export default {
       .then((response) => {
         this.event = response.data;
       })
+      // eslint-disable-next-line
       .catch((error) => console.error(error));
   }
 };
